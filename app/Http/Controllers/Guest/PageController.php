@@ -11,7 +11,6 @@ class PageController extends Controller
     public function index(){
         $trains = Train::all();
 
-        dd($trains);
         return view('home', compact('trains'));
 
     }
