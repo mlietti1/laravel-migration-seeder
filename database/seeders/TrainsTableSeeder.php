@@ -7,7 +7,7 @@ use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
 use Faker\Generator as Faker;
 
-class TrainTableSeeder extends Seeder
+class TrainsTableSeeder extends Seeder
 {
     /**
      * Run the database seeds.
@@ -24,7 +24,7 @@ class TrainTableSeeder extends Seeder
             $new_train->destination = $faker->city();
             $new_train->departure = $faker->time();
             $new_train->arrival = $faker->time();
-            $new_train->train_number = $faker->bothify('??-####');
+            $new_train->train_number = $faker->bothify('??####');
             $new_train->car_number = $faker->randomDigitNotNull();
             $new_train->on_time = $faker->boolean();
             $new_train->is_cancelled = $faker->boolean();
